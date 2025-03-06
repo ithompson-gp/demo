@@ -22,7 +22,7 @@ public class DocumentController {
 
   @GetMapping("/invoice/{id}")
   public ResponseEntity<StreamingResponseBody> generateInvoice(@PathVariable String id) {
-    // In a real application, you would retrieve the data from a database
+    // In a real application, you would retrieve the data from a database, stream, event, etc.
     Map<String, Object> data = createSampleInvoiceData(id);
 
     // Create a streaming response
